@@ -389,3 +389,23 @@ header {
     margin-left: 2em;
     color: var(--clr-dark)
 }
+
+.project__link {
+    background-color: var(--clr-light-gray);
+    border: 1px solid #555555;
+    border-radius: 4px;
+    color: black;
+    padding: 2px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.project__link:hover {
+    background-color: #555555;
+    color: white;
+  }

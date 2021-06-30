@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Project | System Cost Calculation</title>
+        
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+    <script src="https://kit.fontawesome.com/9dbbf5fa4b.js" crossorigin="anonymous"></script>
+ </head>
+
+
+<body>
+    <!-- Header bar -->
+    <header>
+        <h2 class="logo-text"> /crazyboiboi </h2>
+        <nav class="navbar">
+            <ul class="nav__links">
+                <li class="nav__items"><a href="../index.html">Home</a></li>
+                <li class="nav__items"><a href="#about">About</a></li>
+                <!-- <li class="nav__items"><a href="#work">Project</a></li> -->
+                <li class="nav__items"><a href="#contact">Contact</a></li>
+            </ul>            
+        </nav>
+    </header>
+
+
+
+    <!-- Project summary -->
+
+    <section class="project-section">
+        <h1 class="section__title project__name">
+            <strong>System Cost Calculation</strong>
+        </h1>
+
+        <a class="project__link" href="https://github.com/crazyboiboi/SystemCostCalculation" target="_blank"><i class="fab fa-github"> GitHub </i></a>
+
+        <div class="project__summary">
+            <h2 class="section__subtitle project__language"> <strong>Languages:</strong> C#, SQL, XAML</h2>
+            <h2 class="section__subtitle project__libraries"> <strong>Tools:</strong> SQLite, .NET Windows Presentation Foundation (WPF)</h2>
+            
+            <p class="project__description"> 
+                This project is a side project I have worked on for my dad who designs fire-fighting system. He asked me to create a demo 
+                application for creating record of purchase and order for the parts/items needed for a particular system. At the same time,
+                there are different suppliers who may have different pricing for the items they provide. 
+                <br> <br> 
+
+                For the application, I experimented and used a Model-View-ViewModel (MVVM) architecture approach to organise the structure. 
+                Similarly, the idea is to separate responsibilities for each parts that makes the application. The application also make use of 
+                commands to listen for events such as user inputs so that changes in views can be invoked as soon as possible. Additionally,
+                it uses SQLite to manage the backend of the application.
+                <br> <br>
+
+                The main features of the application includes:
+                <ul class="project__feature-list">
+                    <li> Basic Create, Read, Update and Delete (CRUD) operations for items, suppliers and templates </li>
+                    <li> Assign items and set pricing for the items for different suppliers </li>   
+                    <li> Add and delete items from different suppliers into the template where it will calculate the cost of building the system </li>
+                    <li> Modify item quantity and discount in templates </li>
+                    <li> Templates will get saved in a text file and can be viewed/edited within the application </li> 
+                </ul>
+            </p>
+        </div>
+            
+        <div class="portfolio-showcase project-work-showcase">
+            <!-- Item 1 -->
+            <div class="work-item">
+                <img src="../assets/img/system_cost_app/home.png" class="work-screenshot__img">
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="work-item">
+                <img src="../assets/img/system_cost_app/item.png" class="work-screenshot__img">
+            </div> 
+
+            <!-- Item 3 -->
+            <div class="work-item">
+                <img src="../assets/img/system_cost_app/supplier.png" class="work-screenshot__img">
+            </div> 
+
+            <!-- Item 4 -->
+            <div class="work-item">
+                <img src="../assets/img/system_cost_app/create_template.png" class="work-screenshot__img">
+            </div> 
+
+            <!-- Item 5 -->
+            <div class="work-item">
+                <img src="../assets/img/system_cost_app/view_template.png" class="work-screenshot__img">
+            </div> 
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__copyright">
+            <h3 class="footer__copyright-text">
+                Developed by Sean Seow | &copy; 2021
+            </h3>
+        </div>
+
+        <div class="footer__link">
+            <ul class="footer__social-list">
+                <li class="social-list__item"> <a class="social-list__link" href="#"> <i class="fas fa-envelope"></i> </a> </li>    <!-- Mail -->
+                <li class="social-list__item"> <a class="social-list__link" href="#"> <i class="fab fa-github"> </i></a> </li>      <!-- Github -->
+                <li class="social-list__item"> <a class="social-list__link" href="#"> <i class="fab fa-linkedin"></i> </a> </li>    <!-- LinkedIn -->
+                <li class="social-list__item"> <a class="social-list__link" href="#"> <i class="fab fa-facebook"></i> </a> </li>    <!-- Facebook -->
+            </ul>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
