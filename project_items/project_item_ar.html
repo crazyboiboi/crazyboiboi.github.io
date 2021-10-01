@@ -1,132 +1,116 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Project | Augmented Reality app</title>
-        
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
 
     <script src="https://kit.fontawesome.com/9dbbf5fa4b.js" crossorigin="anonymous"></script>
- </head>
+</head>
 
 
 <body>
     <!-- Header bar -->
-    <header>
-        <h2 class="logo-text"> /crazyboiboi </h2>
+    <header class="header">
         <nav class="navbar">
-            <ul class="nav__links">
-                <li class="nav__items"><a href="../index.html">Home</a></li>
-                <li class="nav__items"><a href="#about">About</a></li>
-                <!-- <li class="nav__items"><a href="#work">Project</a></li> -->
-                <li class="nav__items"><a href="#contact">Contact</a></li>
-            </ul>            
+            <div>
+                <a href="#" class="navbar__logo">/crazyboiboi</a>
+            </div>
+
+            <ul class="navbar__links">
+                <li><a href="../index.html" class="link">Home</a></li>
+                <li><a href="../index.html#sec_about" class="link">About</a></li>
+                <li><a href="../index.html#sec_my-work" class="link">Project</a></li>
+                <li><a href="mailto:shsuen99@outlook.com" target="_blank" class="link">Contact</a></li>
+            </ul>
+
+            <div class="navbar__buttons mobile">
+                <div class="navbar__bars active"><i class="fas fa-bars"></i></div>
+                <div class="navbar__close"><i class="fas fa-times"></i></button>
+                </div>
         </nav>
     </header>
 
 
 
-    <!-- Project summary -->
+    <!-- Work Item -->
+    <section class="item container">
+        <h1 class="section__title">Augmented Reality for Heritage</h1>
 
-    <section class="project-section">
-        <h1 class="section__title project__name">
-            <strong>Augmented Reality for Heritage</strong>
-        </h1>
+        <a class="item__link" href="https://github.com/crazyboiboi/LD46-Amnesiac-Bartender" target="_blank"><i
+                class="fab fa-github"> GitHub </i></a>
 
-        <div class="project__summary">
-            <h2 class="section__subtitle project__language"> <strong>Languages:</strong> C#</h2>
-            <h2 class="section__subtitle project__libraries"> <strong>Tools:</strong> Unity, Vuforia AR SDK, ColMap, MeshLab </h2>
-            
-            <p class="project__description"> 
-                This project is a third year dissertation that I have completed during my undergraduate study at Aberystwyth University.
-                It is about implementing object-based registration as an additional feature for an existing AR application created for 
-                "Experience the Lost and Invisible" project which targets a prehistorical site at Bryn Celli Ddu Neolithic passage tomb
-                located in Anglesey, UK. 
-                
-                <br> <br>
-                The final application is successful in achieving object-based recognition for AR. However, due to the Covid-19 pandemic, 
-                I was not able to carry out testing on the actual site thus an alternative would be to use the rock sculpture located at 
-                the front of the university's Computer Science building for testing purposes. At the moment, the application is able to 
-                track two types of objects, mug and the rock sculpture object. It is possible to include more objects through the provision
-                of 3D model of the object to be recognised. 
-
-                <br> <br>
-                For the project, it also uses the photogrammetry technique to capture and reconstruct the 3D model of a real life object
-                such as the rock sculpture. It involves taking lots of images of the object then processing it using ColMap and MeshLab to
-                obtain the final 3D model of the object.
-
-                <br> <br>
-                There are two types of recognition mode available:
-                <ul class="project__feature-list">
-                    <li> Standard - uses guide views to inform the user how to position the camera to achieve recognition </li>
-                    <li> Advanced - model data is trained to allow recognition from multiple angle </li>                    
-                </ul>
-            </p>
-        </div>
-            
-        <div class="portfolio-showcase project-work-showcase">
-            <!-- Item 1 -->
-            <div class="work-item">
-                <img src="../assets/img/ar_project/1.jpeg" class="work-screenshot__img">
-            </div>    
-            
-            <!-- Item 2 -->
-            <div class="work-item">
-                <img src="../assets/img/ar_project/2.jpeg" class="work-screenshot__img">
-            </div>  
-            
-            <!-- Item 3 -->
-            <div class="work-item">
-                <img src="../assets/img/ar_project/3.jpeg" class="work-screenshot__img">
-            </div>  
-
-            <!-- Item 4 -->
-            <div class="work-item">
-                <img src="../assets/img/ar_project/4.jpeg" class="work-screenshot__img">
-            </div>  
-
-            <!-- Item 5 -->
-            <div class="work-item">
-                <img src="../assets/img/ar_project/5.jpeg" class="work-screenshot__img">
-            </div>  
-
-            <!-- Item 6 -->
-            <div class="work-item">
-                <img src="../assets/img/ar_project/6.jpeg" class="work-screenshot__img">
-            </div>  
-
-            <!-- Item 7 -->
-            <div class="work-item">
-                <img src="../assets/img/ar_project/7.jpeg" class="work-screenshot__img">
-            </div>  
-            
-           
+        <div class="item__languagestools">
+            <h2 class="section__subtitle"> <strong>Languages:</strong> C#</h2>
+            <h2 class="section__subtitle"> <strong>Tools:</strong> Unity, Vuforia AR SDK, ColMap, MeshLab </h2>
         </div>
 
+        <p class="project__description">
+            This project is a third year dissertation that I have completed during my undergraduate study at Aberystwyth
+            University. It is about implementing object-based registration as an additional feature for an existing AR 
+            application created for "Experience the Lost and Invisible" project which targets a prehistorical site at 
+            Bryn Celli Ddu Neolithic passage tomb located in Anglesey, UK.
+            <br> <br>
+
+            The final application is successful in achieving object-based recognition for AR. However, due to the
+            Covid-19 pandemic, I was not able to carry out testing on the actual site thus an alternative would be to 
+            use the rock sculpture located at the front of the university's Computer Science building for testing 
+            purposes. At the moment, the application is able to track two types of objects, mug and the rock sculpture
+            object. It is possible to include more objects through the provision of 3D model of the object to be recognised.
+            <br> <br>
+
+            For the project, it also uses the photogrammetry technique to capture and reconstruct the 3D model of a real
+            life object such as the rock sculpture. It involves taking lots of images of the object then processing it using 
+            ColMap and MeshLab to obtain the final 3D model of the object.
+            <br> <br>
+
+            There are two types of recognition mode available:
+            <ul class="project__feature-list">
+                <li> Standard - uses guide views to inform the user how to position the camera to achieve recognition </li>
+                <li> Advanced - model data is trained to allow recognition from multiple angle </li>
+            </ul>
+        </p>
+
+        <div class="item__gallery">
+            <img src="../assets/img/ar_project/1.jpeg" class="item__img" />
+            <img src="../assets/img/ar_project/2.jpeg" class="item__img" />
+            <img src="../assets/img/ar_project/3.jpeg" class="item__img" />
+            <img src="../assets/img/ar_project/4.jpeg" class="item__img" />
+            <img src="../assets/img/ar_project/5.jpeg" class="item__img" />
+            <img src="../assets/img/ar_project/6.jpeg" class="item__img" />
+            <img src="../assets/img/ar_project/7.jpeg" class="item__img" />
+        </div>
     </section>
 
 
-
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__copyright">
-            <h3 class="footer__copyright-text">
-                Developed by Sean Seow | &copy; 2021
-            </h3>
-        </div>
+    <footer class="footer container">
+        <ul class="footer__socials">
+            <li> <a class="link" href="mailto:shsuen99@outlook.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a> </li>
 
-        <div class="footer__link">
-            <ul class="footer__social-list">
-                <li class="social-list__item"> <a class="social-list__link" href="#"> <i class="fas fa-envelope"></i> </a> </li>    <!-- Mail -->
-                <li class="social-list__item"> <a class="social-list__link" href="#"> <i class="fab fa-github"> </i></a> </li>      <!-- Github -->
-                <li class="social-list__item"> <a class="social-list__link" href="#"> <i class="fab fa-linkedin"></i> </a> </li>    <!-- LinkedIn -->
-                <li class="social-list__item"> <a class="social-list__link" href="#"> <i class="fab fa-facebook"></i> </a> </li>    <!-- Facebook -->
-            </ul>
-        </div>
+            <li> <a class="link" href="https://github.com/crazyboiboi" target="_blank">
+                    <i class="fab fa-github"> </i>
+                </a> </li>
 
+            <li> <a class="link" href="https://www.linkedin.com/in/ses99/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a> </li>
+
+            <li> <a class="link" href="https://www.facebook.com/sean.hongsuen/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a> </li>
+        </ul>
+
+        <h4 class="footer__copyright section__subtitle">
+            Developed by Sean Seow | &copy; 2021
+        </h4>
     </footer>
 
 

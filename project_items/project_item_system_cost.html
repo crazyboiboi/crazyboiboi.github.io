@@ -7,7 +7,7 @@
     <title>Project | System Cost Calculation</title>
         
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
 
     <script src="https://kit.fontawesome.com/9dbbf5fa4b.js" crossorigin="anonymous"></script>
  </head>
@@ -15,34 +15,41 @@
 
 <body>
     <!-- Header bar -->
-    <header>
-        <h2 class="logo-text"> /crazyboiboi </h2>
+    <header class="header">
         <nav class="navbar">
-            <ul class="nav__links">
-                <li class="nav__items"><a href="../index.html">Home</a></li>
-                <li class="nav__items"><a href="#about">About</a></li>
-                <!-- <li class="nav__items"><a href="#work">Project</a></li> -->
-                <li class="nav__items"><a href="#contact">Contact</a></li>
-            </ul>            
+            <div>
+                <a href="#" class="navbar__logo">/crazyboiboi</a>
+            </div>
+
+            <ul class="navbar__links">
+                <li><a href="../index.html" class="link">Home</a></li>
+                <li><a href="../index.html#sec_about" class="link">About</a></li>
+                <li><a href="../index.html#sec_my-work" class="link">Project</a></li>
+                <li><a href="mailto:shsuen99@outlook.com" target="_blank" class="link">Contact</a></li>
+            </ul>
+
+            <div class="navbar__buttons mobile">
+                <div class="navbar__bars active"><i class="fas fa-bars"></i></div>
+                <div class="navbar__close"><i class="fas fa-times"></i></button>
+                </div>
         </nav>
     </header>
 
 
 
-    <!-- Project summary -->
-
-    <section class="project-section">
-        <h1 class="section__title project__name">
-            <strong>System Cost Calculation</strong>
-        </h1>
-
-        <a class="project__link" href="https://github.com/crazyboiboi/SystemCostCalculation" target="_blank"><i class="fab fa-github"> GitHub </i></a>
-
-        <div class="project__summary">
-            <h2 class="section__subtitle project__language"> <strong>Languages:</strong> C#, SQL, XAML</h2>
-            <h2 class="section__subtitle project__libraries"> <strong>Tools:</strong> SQLite, .NET Windows Presentation Foundation (WPF)</h2>
-            
-            <p class="project__description"> 
+        <!-- Work Item -->
+        <section class="item container">
+            <h1 class="section__title">System Cost Calculation</h1>
+    
+            <a class="item__link" href="https://github.com/crazyboiboi/LD46-Amnesiac-Bartender" target="_blank"><i
+                    class="fab fa-github"> GitHub </i></a>
+    
+            <div class="item__languagestools">
+                <h2 class="section__subtitle"> <strong>Languages:</strong> C#, SQL, XAML</h2>
+                <h2 class="section__subtitle"> <strong>Tools:</strong>  SQLite, .NET Windows Presentation Foundation (WPF)</h2>
+            </div>
+    
+            <p class="item__description"> 
                 This project is a side project I have worked on for my dad who designs fire-fighting system. He asked me to create a demo 
                 application for creating record of purchase and order for the parts/items needed for a particular system. At the same time,
                 there are different suppliers who may have different pricing for the items they provide. 
@@ -55,7 +62,7 @@
                 <br> <br>
 
                 The main features of the application includes:
-                <ul class="project__feature-list">
+                <ul class="item__feature-list">
                     <li> Basic Create, Read, Update and Delete (CRUD) operations for items, suppliers and templates </li>
                     <li> Assign items and set pricing for the items for different suppliers </li>   
                     <li> Add and delete items from different suppliers into the template where it will calculate the cost of building the system </li>
@@ -63,56 +70,41 @@
                     <li> Templates will get saved in a text file and can be viewed/edited within the application </li> 
                 </ul>
             </p>
-        </div>
-            
-        <div class="portfolio-showcase project-work-showcase">
-            <!-- Item 1 -->
-            <div class="work-item">
-                <img src="../assets/img/system_cost_app/home.png" class="work-screenshot__img">
+    
+            <div class="item__gallery">
+                <img src="../assets/img/system_cost_app/home.png" class="item__img" />
+                <img src="../assets/img/system_cost_app/item.png" class="item__img" />
+                <img src="../assets/img/system_cost_app/supplier.png" class="item__img" />
+                <img src="../assets/img/system_cost_app/create_template.png" class="item__img" />
+                <img src="../assets/img/system_cost_app/view_template.png" class="item__img" />
             </div>
-            
-            <!-- Item 2 -->
-            <div class="work-item">
-                <img src="../assets/img/system_cost_app/item.png" class="work-screenshot__img">
-            </div> 
+    
+        </section>
 
-            <!-- Item 3 -->
-            <div class="work-item">
-                <img src="../assets/img/system_cost_app/supplier.png" class="work-screenshot__img">
-            </div> 
-
-            <!-- Item 4 -->
-            <div class="work-item">
-                <img src="../assets/img/system_cost_app/create_template.png" class="work-screenshot__img">
-            </div> 
-
-            <!-- Item 5 -->
-            <div class="work-item">
-                <img src="../assets/img/system_cost_app/view_template.png" class="work-screenshot__img">
-            </div> 
-        </div>
-
-    </section>
-
-
-
+    
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__copyright">
-            <h3 class="footer__copyright-text">
-                Developed by Sean Seow | &copy; 2021
-            </h3>
-        </div>
+    <footer class="footer container">        
+        <ul class="footer__socials">
+            <li> <a class="link" href="mailto:shsuen99@outlook.com" target="_blank">
+                <i class="fas fa-envelope"></i> 
+            </a> </li>
+            
+            <li> <a class="link" href="https://github.com/crazyboiboi" target="_blank"> 
+                <i class="fab fa-github"> </i>
+            </a> </li>
+            
+            <li> <a class="link" href="https://www.linkedin.com/in/ses99/" target="_blank"> 
+                <i class="fab fa-linkedin"></i> 
+            </a> </li>
+            
+            <li> <a class="link" href="https://www.facebook.com/sean.hongsuen/" target="_blank"> 
+                <i class="fab fa-facebook"></i>
+            </a> </li>
+        </ul>
 
-        <div class="footer__link">
-            <ul class="footer__social-list">
-                <li class="social-list__item"> <a class="social-list__link" href="#"> <i class="fas fa-envelope"></i> </a> </li>    <!-- Mail -->
-                <li class="social-list__item"> <a class="social-list__link" href="#"> <i class="fab fa-github"> </i></a> </li>      <!-- Github -->
-                <li class="social-list__item"> <a class="social-list__link" href="#"> <i class="fab fa-linkedin"></i> </a> </li>    <!-- LinkedIn -->
-                <li class="social-list__item"> <a class="social-list__link" href="#"> <i class="fab fa-facebook"></i> </a> </li>    <!-- Facebook -->
-            </ul>
-        </div>
-
+        <h4 class="footer__copyright section__subtitle">
+            Developed by Sean Seow | &copy; 2021
+        </h4>
     </footer>
 
 
