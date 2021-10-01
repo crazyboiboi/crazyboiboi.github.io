@@ -432,6 +432,17 @@ body {
   gap: 1rem;
 }
 
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: var(--small-font-size);
+}
+
 .footer__socials {
   display: -webkit-box;
   display: -ms-flexbox;

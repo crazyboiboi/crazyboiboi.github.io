@@ -419,6 +419,13 @@ body{
     justify-items: center;
     gap: 1rem;
 
+    &__contact {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        font-size: var(--small-font-size);
+    }
+
     &__socials {
         display: flex;
         gap: 1rem;
